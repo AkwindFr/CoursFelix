@@ -5,16 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-<body>
+<body style="text-align:center;">
+    <h1>Bonjour Félix, bienvenu dans ton évaluation sur Internet</h1>
     <div>
-        <input type="number" name="" id="main_input">
-        <button>action</button>
+        <button id="action">C'est parti !</button>
     </div>
     <div class="result"></div>
     <script>
         function multiplier(number){
-            return number*50;
+            let data = prompt('Comment t\'appelles tu ?');
+            alert('Bonjour ' + data);
         };
+
+        var button_action = document.getElementById('action');
+        button_action.addEventListener("click", multiplier);
     </script>
 </body>
 </html>
